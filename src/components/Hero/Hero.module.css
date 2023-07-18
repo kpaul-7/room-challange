@@ -1,0 +1,88 @@
+.Hero__Image img{
+ width: 100%;
+ object-fit: cover;
+}
+.Hero__Content{
+    margin: 20px 16px;
+}
+.Hero__Content__Title{
+    font-size: 2em;
+    font-weight:700;
+    margin-bottom: 16px;
+}
+.Hero__Content__Description{
+    line-height: 1.2;
+    color: var(--darkGray);
+}
+.Shop{
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+#Shop__First__Span{
+    margin-right: 20px;
+    font-weight: 600;
+}
+.Shop__Span{
+    font-weight: 600;
+}
+.Shop__Span:hover{
+    cursor: pointer;
+}
+.Hero_Mobile_Wrapper{
+    position: relative;
+}
+.MobileIcons{
+    position: absolute;
+    z-index: 99;
+    bottom: 4px;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.MobileIcons img{
+    background-color: var(--black);
+    width: 40px;
+    padding: 16px;
+}
+@media screen and (min-width:800px) {
+    .Hero{
+        display: grid;
+        grid-template-columns: 0.6fr 0.4fr;
+    }
+    .Hero__Image img{
+        min-width: 60%;
+    } 
+    .Hero__Sidebar{
+        position: relative;
+    }
+    .Hero__Content{
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Icons{
+        position: absolute;
+        bottom: 0;
+    }
+    .Icons img{
+        background-color: var(--black);
+        padding: 16px;
+        height: 45px;
+        width: 40px;
+    }
+    .Icons img:hover{
+        cursor:pointer;
+    }
+    .Content__Div{
+        max-width: 300px;
+    }
+    .Shop{
+        width: 300px;
+    }
+}

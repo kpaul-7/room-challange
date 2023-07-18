@@ -1,0 +1,62 @@
+.Mobile__Navbar{
+ position: absolute;
+ width: 100vw;
+ color: var(--white);
+ font-weight: bold;
+ z-index: 999;
+}
+.Mobile__Menu{
+    padding: 16px;
+}
+.Mobile__Menu__Name{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Show{
+    display: flex;
+}
+.Hide{
+    display: none
+}
+.Mobile__Navbar ul{
+    list-style: none;
+    justify-content: space-between;
+    background-color: var(--white);
+    align-items: center;
+    padding: 46px 16px;
+
+}
+.Mobile__Navbar a{
+    text-decoration: none;
+    color: var(--black);
+}
+.Desktop__Navbar{
+    width: min(500px,40%);
+    position: absolute;
+    margin: 30px;
+    display: flex;
+    color: var(--white);
+    align-items: center;
+
+}
+.Desktop__Navbar ul{
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin-left: 30px;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.Desktop__Navbar a{
+    text-decoration: none;
+    font-weight: 500;
+    color: inherit;
+}
+.Desktop_Logo p{
+    font-size: 20px;
+}
+.Desktop__Navbar a:hover{
+    border-bottom: 2px solid var(--white);
+}
